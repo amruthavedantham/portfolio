@@ -101,5 +101,3 @@ To run locally:
 ```bash
 git clone https://github.com/amruthavedantham/portfolio.git
 cd portfolio
-npm install
-npm run dev

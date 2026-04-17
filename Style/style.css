@@ -171,43 +171,49 @@ span {
 
 /* ABOUT SECTION */
 
-.about{
+.about {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
-    gap: 6rem;
     background: var(--snd-bg-color);
+    min-height: 70vh;
+    padding: 4rem 2rem;
 }
 
-.about-img img{
-    width: 18vw;
-    height: auto;          /* 👈 keeps original aspect ratio */
-    border-radius: 20px;
-    object-fit: cover;
+/* This is the key fix */
+.about-content {
+    max-width: 800px;   /* controls width */
+    width: 100%;
+    text-align: left;   /* base alignment */
 }
 
-.about-img{
-    display: flex;
-    justify-content: center;
-}
-
-.heading{
+/* Heading */
+.heading {
     text-align: center;
-    font-size: 6rem; 
+    font-size: 6rem;
 }
 
-.about-content h1{
-    text-align: center;
-    line-height: 2.5;
+/* Name */
+.about-content h1 {
+    text-align: left;
+    line-height: 2.2;
 }
 
-.about-content h2{
+/* Subheading */
+.about-content h2 {
     font-size: 2.6rem;
 }
 
-.about-content p{
+/* Paragraph */
+.about-content p {
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+    text-align: justify;      /* important */
+    line-height: 1.5;         /* improves readability */
+}
+
+.about-content .btn {
+    margin-top: 1.5rem;   /* adjust: 1.2–2rem based on taste */
 }
 
 
